@@ -1,0 +1,27 @@
+.primary-button {
+    border-radius: 3.6rem;
+    border: 2px solid $color-dark-gray;
+    display: flex;
+    gap: 2.4rem;
+    width: fit-content;
+    padding: 2.4rem 9rem;
+    color: $color-black;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+
+    text-decoration: none;
+    transition: all 0.3s;
+
+    img {
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        img {
+            transform: translateX(1rem);
+        }
+    }
+}

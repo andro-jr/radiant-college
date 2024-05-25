@@ -1,0 +1,38 @@
+#home-about {
+
+
+    .services-container {
+        display: flex;
+        gap: 4.4rem;
+        flex-wrap: wrap;
+
+        .service-box {
+            padding: 4.6rem;
+            border-radius: 3.4rem;
+            background-color: $color-medium-white;
+            // flex: 1;
+            flex-basis: calc(50% - 4.4rem);
+            flex-grow: 1;
+
+            display: flex;
+            gap: 2.4rem;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 4rem;
+            }
+
+            &.single-row-box {
+                flex-direction: row-reverse;
+                align-items: center;
+
+                img {
+                    width: 8rem;
+                }
+            }
+        }
+    }
+
+
+}

@@ -85,6 +85,13 @@ input[type=number] {
   font-weight: 800;
   line-height: 2.8rem; }
 
+.primary-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #0A0A0A;
+  transition: all 0.3s; }
+
 .bold {
   font-weight: 800; }
 
@@ -239,14 +246,8 @@ input[type=number] {
     margin-bottom: 0.8rem; }
   .event-card.event-variant .tag {
     color: #BA427F; }
-  .event-card:hover .title {
+  .event-card:hover .primary-title {
     color: #BA427F; }
-  .event-card .title {
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 2.8rem;
-    color: #0A0A0A;
-    transition: all 0.3s; }
   .event-card .date {
     font-size: 1.6rem;
     font-weight: 300;
@@ -322,6 +323,40 @@ header {
       #hero .hero-container .hero-row .hero-image img {
         margin: auto;
         width: 38rem; }
+
+footer {
+  position: relative;
+  overflow: hidden; }
+  footer .footer-svg {
+    position: absolute;
+    right: -20%;
+    bottom: -60%;
+    z-index: -1; }
+  footer .footer-logo {
+    height: 8rem; }
+  footer .contact-detail {
+    display: flex;
+    margin-bottom: 1.6rem; }
+    footer .contact-detail span {
+      min-width: 12rem; }
+  footer .footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    footer .footer-items .footer-item {
+      transition: all 0.3s;
+      text-decoration: none;
+      font-weight: 400;
+      width: fit-content; }
+      footer .footer-items .footer-item:hover {
+        color: #BA427F; }
+  footer .copyright {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.8rem; }
+  footer .footer-socials {
+    display: flex;
+    gap: 2rem; }
 
 #home-about .services-container {
   display: flex;

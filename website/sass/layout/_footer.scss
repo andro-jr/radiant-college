@@ -1,0 +1,52 @@
+footer {
+    position: relative;
+    overflow: hidden;
+
+    .footer-svg {
+        position: absolute;
+        right: -20%;
+        bottom: -60%;
+        z-index: -1;
+    }
+
+    .footer-logo {
+        height: 8rem;
+    }
+
+    .contact-detail {
+        display: flex;
+        margin-bottom: 1.6rem;
+
+        span {
+            min-width: 12rem;
+        }
+    }
+
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .footer-item {
+            transition: all 0.3s;
+            text-decoration: none;
+            font-weight: 400;
+            width: fit-content;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 3.8rem;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,56 @@
+#hero {
+    height: 100vh;
+    background: $hero-gradient;
+
+    .hero-container {
+        height: 100%;
+        padding-top: 15rem;
+
+        .hero-row {
+            height: 100%;
+            align-items: flex-end;
+
+            .hero-content-col {
+                align-self: center;
+
+                .hero-contents {
+                    .hero-heading {
+                        font-size: 10rem;
+                        font-weight: 300;
+                        line-height: 9.2rem;
+                        letter-spacing: -2px;
+
+                        span {
+                            display: block;
+
+                            &.primary-bold {
+                                color: $color-primary;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .hero-tag {
+                    display: flex;
+                    width: 80%;
+                    gap: 2rem;
+                    align-items: center;
+                }
+            }
+
+            .hero-image {
+                img {
+                    margin: auto;
+                    width: 38rem;
+                }
+            }
+
+
+        }
+
+
+    }
+}

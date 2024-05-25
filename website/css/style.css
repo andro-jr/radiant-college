@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 1s ease; }
+
+.slide-in-final {
+  opacity: 1;
+  transform: translateX(0); }
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 1.5s 0.8s ease; }
+
+.slide-up-final {
+  opacity: 1;
+  transform: translateY(0); }
+
+.scale {
+  transform: scale(0);
+  transition: all 0.5s 1s ease; }
+
+.scale-final {
+  transform: scale(100%); }
+
 *,
 *::after,
 *::before {

@@ -1,15 +1,15 @@
-'use strict'
+"use strict";
 
 // Reveal sections
-const allSections = document.querySelectorAll('.animate-section');
-console.log('allSections :', allSections);
+const allSections = document.querySelectorAll(".animate-section");
+console.log("allSections :", allSections);
 
 const revealSection = function (entries, observer) {
     const [entry] = entries;
 
     if (!entry.isIntersecting) return;
 
-    entry.target.classList.remove('section--hidden');
+    entry.target.classList.remove("section--hidden");
     observer.unobserve(entry.target);
 };
 
@@ -20,19 +20,19 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
     sectionObserver.observe(section);
-    section.classList.add('section--hidden');
+    section.classList.add("section--hidden");
 });
 
 // Video section
-const videoOverlay = document.querySelector('.video-overlay');
-const homeVideo = document.querySelector('#home-video')
+const videoOverlay = document.querySelector(".video-overlay");
+const homeVideo = document.querySelector("#home-video");
 
 if (videoOverlay) {
-    videoOverlay.addEventListener('click', () => {
-        videoOverlay.style.display = 'none';
-        homeVideo.setAttribute("controls", "controls")
-        homeVideo.play()
-    })
+    videoOverlay.addEventListener("click", () => {
+        videoOverlay.style.display = "none";
+        homeVideo.setAttribute("controls", "controls");
+        homeVideo.play();
+    });
 }
 
 // Events carousel
@@ -58,48 +58,74 @@ $(document).ready(function () {
             1200: {
                 items: 3,
             },
-
         },
 
         onChanged: function (event) {
-            const parent = event.target.closest('.carousel-row');
+            const parent = event.target.closest(".carousel-row");
 
-            if (!parent) return
-            const customNext = parent.querySelector('.nav-next')
-            const customPrev = parent.querySelector('.nav-prev')
+            if (!parent) return;
+            const customNext = parent.querySelector(".nav-next");
+            const customPrev = parent.querySelector(".nav-prev");
             var carousel = event.relatedTarget;
             var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
             var hasPrev = carousel.relative(carousel.current()) > 0;
 
             if (hasNext) {
-                customNext.classList.remove('disabled') // Enable the next button
+                customNext.classList.remove("disabled"); // Enable the next button
             } else {
-                customNext.classList.add('disabled') // Disable the next button
+                customNext.classList.add("disabled"); // Disable the next button
             }
 
             if (hasPrev) {
-                customPrev.classList.remove('disabled') // Enable the next button
+                customPrev.classList.remove("disabled"); // Enable the next button
             } else {
-                customPrev.classList.add('disabled') // Disable the next button
+                customPrev.classList.add("disabled"); // Disable the next button
             }
-
-        }
+        },
     });
 
     // Custom navigation action
-    $('.nav-prev').click(function () {
-        var parentCarousel = $(this).closest('.carousel-row');
-        var owl = parentCarousel.find('.owl-carousel');
+    $(".nav-prev").click(function () {
+        var parentCarousel = $(this).closest(".carousel-row");
+        var owl = parentCarousel.find(".owl-carousel");
         owl.owlCarousel();
-        owl.trigger('prev.owl.carousel');
+        owl.trigger("prev.owl.carousel");
     });
 
-
-    $('.nav-next').click(function () {
-        var parentCarousel = $(this).closest('.carousel-row');
-        var owl = parentCarousel.find('.owl-carousel');
+    $(".nav-next").click(function () {
+        var parentCarousel = $(this).closest(".carousel-row");
+        var owl = parentCarousel.find(".owl-carousel");
         owl.owlCarousel();
-        owl.trigger('next.owl.carousel');
-
+        owl.trigger("next.owl.carousel");
     });
-})
+});
+
+// animation
+
+const slideIns = document.querySelectorAll(".slide-in");
+const slideUps = document.querySelectorAll(".slide-up");
+const scale = document.querySelectorAll(".scale");
+
+const animateHero = (nodeList, finalClass) => {
+    window.addEventListener("DOMContentLoaded", () => {
+        nodeList.forEach((item) => {
+            item.classList.add(finalClass);
+        });
+    });
+};
+
+if (slideIns) {
+    animateHero(slideIns, "slide-in-final");
+}
+if (slideUps) {
+    animateHero(slideUps, "slide-up-final");
+}
+if (scale) {
+    window.addEventListener("DOMContentLoaded", () => {
+        scale.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("scale-final");
+            }, (index + 1) * 500);
+        });
+    });
+}

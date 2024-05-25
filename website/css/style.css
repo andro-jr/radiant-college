@@ -85,3 +85,19 @@ input[type=number] {
 
 .mb-80 {
   margin-bottom: 8rem; }
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0; }
+  header .header-container .logo img {
+    height: 8rem; }
+  header .header-container nav .nav-items {
+    display: flex;
+    gap: 4rem; }
+    header .header-container nav .nav-items .nav-item {
+      color: #0A0A0A;
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-decoration: none; }

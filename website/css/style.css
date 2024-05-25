@@ -224,6 +224,55 @@ input[type=number] {
       font-weight: 800;
       text-transform: uppercase; }
 
+.event-card {
+  text-decoration: none; }
+  .event-card img {
+    border-radius: 1.8rem;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    margin-bottom: 2.4rem; }
+  .event-card .tag {
+    color: #f9a81d;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.8rem;
+    margin-bottom: 0.8rem; }
+  .event-card.event-variant .tag {
+    color: #BA427F; }
+  .event-card:hover .title {
+    color: #BA427F; }
+  .event-card .title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    color: #0A0A0A;
+    transition: all 0.3s; }
+  .event-card .date {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 3.8rem;
+    color: #737373; }
+
+.carousel-row {
+  position: relative; }
+  .carousel-row .custom-navigations {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 2; }
+    .carousel-row .custom-navigations .custom-nav {
+      filter: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(95%) contrast(91%);
+      cursor: pointer; }
+      .carousel-row .custom-navigations .custom-nav.disabled {
+        display: none; }
+    .carousel-row .custom-navigations .nav-next {
+      position: absolute;
+      right: -4rem; }
+    .carousel-row .custom-navigations .nav-prev {
+      position: absolute;
+      left: -4rem;
+      transform: rotate(180deg); }
+
 header {
   position: absolute;
   top: 0;
@@ -340,3 +389,6 @@ header {
       justify-content: center;
       align-items: center;
       cursor: pointer; }
+
+#home-events {
+  background: #FBFBFB; }

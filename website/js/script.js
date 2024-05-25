@@ -24,7 +24,6 @@ allSections.forEach(function (section) {
 });
 
 // Video section
-
 const videoOverlay = document.querySelector('.video-overlay');
 const homeVideo = document.querySelector('#home-video')
 
@@ -35,3 +34,72 @@ if (videoOverlay) {
         homeVideo.play()
     })
 }
+
+// Events carousel
+$(document).ready(function () {
+    $(".events-carousel").owlCarousel({
+        loop: false,
+        nav: false,
+        items: 3,
+        margin: 40,
+        responsive: {
+            0: {
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 700,
+            },
+            600: {
+                items: 2,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 700,
+            },
+            1200: {
+                items: 3,
+            },
+
+        },
+
+        onChanged: function (event) {
+            const parent = event.target.closest('.carousel-row');
+
+            if (!parent) return
+            const customNext = parent.querySelector('.nav-next')
+            const customPrev = parent.querySelector('.nav-prev')
+            var carousel = event.relatedTarget;
+            var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
+            var hasPrev = carousel.relative(carousel.current()) > 0;
+
+            if (hasNext) {
+                customNext.classList.remove('disabled') // Enable the next button
+            } else {
+                customNext.classList.add('disabled') // Disable the next button
+            }
+
+            if (hasPrev) {
+                customPrev.classList.remove('disabled') // Enable the next button
+            } else {
+                customPrev.classList.add('disabled') // Disable the next button
+            }
+
+        }
+    });
+
+    // Custom navigation action
+    $('.nav-prev').click(function () {
+        var parentCarousel = $(this).closest('.carousel-row');
+        var owl = parentCarousel.find('.owl-carousel');
+        owl.owlCarousel();
+        owl.trigger('prev.owl.carousel');
+    });
+
+
+    $('.nav-next').click(function () {
+        var parentCarousel = $(this).closest('.carousel-row');
+        var owl = parentCarousel.find('.owl-carousel');
+        owl.owlCarousel();
+        owl.trigger('next.owl.carousel');
+
+    });
+})

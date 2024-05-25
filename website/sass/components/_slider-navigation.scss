@@ -1,0 +1,31 @@
+.carousel-row {
+    position: relative;
+
+    .custom-navigations {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        .custom-nav {
+            filter: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(95%) contrast(91%);
+            cursor: pointer;
+
+            &.disabled {
+                display: none;
+            }
+
+        }
+
+        .nav-next {
+            position: absolute;
+            right: -4rem;
+        }
+
+        .nav-prev {
+            position: absolute;
+            left: -4rem;
+            transform: rotate(180deg);
+        }
+    }
+}

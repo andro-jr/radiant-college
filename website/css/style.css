@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1.5; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+p {
+  margin-bottom: 0; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-inline: 2rem; } }
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1540px; } }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BA427F; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #BA427F; }
+
+.mb-8 {
+  margin-bottom: 0.8rem; }
+
+.mb-16 {
+  margin-bottom: 1.6rem; }
+
+.mb-24 {
+  margin-bottom: 2.4rem; }
+
+.mb-32 {
+  margin-bottom: 3.2rem; }
+
+.mb-40 {
+  margin-bottom: 4rem; }
+
+.mb-64 {
+  margin-bottom: 6.4rem; }
+
+.mb-72 {
+  margin-bottom: 7.2rem; }
+
+.mb-80 {
+  margin-bottom: 8rem; }

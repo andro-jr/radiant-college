@@ -316,7 +316,10 @@ header {
 
 #home-message .message-col {
   padding-right: 7.4rem;
-  border-right: 1px solid #CACACA; }
+  border-right: 1px solid #CACACA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 #home-message .video-container {
   display: flex;

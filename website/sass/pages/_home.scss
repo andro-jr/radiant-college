@@ -67,6 +67,10 @@
     .message-col {
         padding-right: 7.4rem;
         border-right: 1px solid $color-light-gray;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .video-container {

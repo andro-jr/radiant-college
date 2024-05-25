@@ -48,3 +48,49 @@
         }
     }
 }
+
+#home-message {
+    .message-head {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .messenger-profile {
+            width: 10rem;
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+        }
+    }
+
+    .message-col {
+        padding-right: 7.4rem;
+        border-right: 1px solid $color-light-gray;
+    }
+
+    .video-container {
+        display: flex;
+        padding-left: 7.4rem;
+
+        .video-box {
+            border-radius: 2.8rem;
+            overflow: hidden;
+            position: relative;
+
+            video {
+                width: 100%;
+                display: block;
+            }
+
+            .video-overlay {
+                position: absolute;
+                inset: 0;
+                z-index: 2;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 41.27%, #000 100%);
+                @include flex-center;
+                cursor: pointer;
+            }
+        }
+    }
+}

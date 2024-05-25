@@ -22,3 +22,16 @@ allSections.forEach(function (section) {
     sectionObserver.observe(section);
     section.classList.add('section--hidden');
 });
+
+// Video section
+
+const videoOverlay = document.querySelector('.video-overlay');
+const homeVideo = document.querySelector('#home-video')
+
+if (videoOverlay) {
+    videoOverlay.addEventListener('click', () => {
+        videoOverlay.style.display = 'none';
+        homeVideo.setAttribute("controls", "controls")
+        homeVideo.play()
+    })
+}

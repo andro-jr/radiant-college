@@ -72,7 +72,7 @@ input[type=number] {
 .primary-h {
   font-size: 4.8rem;
   font-weight: 800;
-  line-height: 4.4rem; }
+  line-height: 5rem; }
 
 .secondary-p {
   font-size: 3rem;
@@ -302,3 +302,38 @@ header {
   gap: 3.2rem; }
   #home-courses .courses-box .course-card {
     flex: 1; }
+
+#home-message .message-head {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between; }
+  #home-message .message-head .messenger-profile {
+    width: 10rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%; }
+
+#home-message .message-col {
+  padding-right: 7.4rem;
+  border-right: 1px solid #CACACA; }
+
+#home-message .video-container {
+  display: flex;
+  padding-left: 7.4rem; }
+  #home-message .video-container .video-box {
+    border-radius: 2.8rem;
+    overflow: hidden;
+    position: relative; }
+    #home-message .video-container .video-box video {
+      width: 100%;
+      display: block; }
+    #home-message .video-container .video-box .video-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.27%, #000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }

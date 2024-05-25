@@ -9,6 +9,7 @@
         .hero-row {
             height: 100%;
             align-items: flex-end;
+            overflow: hidden;
 
             .hero-content-col {
                 align-self: center;
@@ -42,9 +43,46 @@
             }
 
             .hero-image {
-                img {
+                position: relative;
+                margin-bottom: -12rem;
+
+                .hero-png {
+                    position: relative;
+                    z-index: 2;
                     margin: auto;
                     width: 38rem;
+                }
+
+                .hero-svg {
+                    position: absolute;
+                    z-index: 1;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .hero-satellite {
+                    position: absolute;
+                    background: white;
+                    z-index: 3;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    line-height: 2.8rem;
+                    color: $color-dark-gray;
+                    border-radius: 1.4rem;
+                    padding: 1rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 10rem;
+                    height: 10rem;
+
+                    img {
+                        width: 4.4rem;
+                        margin-bottom: 2px;
+                    }
                 }
             }
 

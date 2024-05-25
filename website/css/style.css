@@ -302,7 +302,8 @@ header {
     padding-top: 15rem; }
     #hero .hero-container .hero-row {
       height: 100%;
-      align-items: flex-end; }
+      align-items: flex-end;
+      overflow: hidden; }
       #hero .hero-container .hero-row .hero-content-col {
         align-self: center; }
         #hero .hero-container .hero-row .hero-content-col .hero-contents .hero-heading {
@@ -320,9 +321,39 @@ header {
           width: 80%;
           gap: 2rem;
           align-items: center; }
-      #hero .hero-container .hero-row .hero-image img {
-        margin: auto;
-        width: 38rem; }
+      #hero .hero-container .hero-row .hero-image {
+        position: relative;
+        margin-bottom: -12rem; }
+        #hero .hero-container .hero-row .hero-image .hero-png {
+          position: relative;
+          z-index: 2;
+          margin: auto;
+          width: 38rem; }
+        #hero .hero-container .hero-row .hero-image .hero-svg {
+          position: absolute;
+          z-index: 1;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        #hero .hero-container .hero-row .hero-image .hero-satellite {
+          position: absolute;
+          background: white;
+          z-index: 3;
+          font-size: 1.3rem;
+          font-weight: 700;
+          line-height: 2.8rem;
+          color: #515050;
+          border-radius: 1.4rem;
+          padding: 1rem 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 10rem;
+          height: 10rem; }
+          #hero .hero-container .hero-row .hero-image .hero-satellite img {
+            width: 4.4rem;
+            margin-bottom: 2px; }
 
 footer {
   position: relative;

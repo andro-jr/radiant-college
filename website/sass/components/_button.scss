@@ -25,3 +25,18 @@
         }
     }
 }
+
+.secondary-button {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+
+    border: 2px solid white;
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    padding: 1.4rem 2.2rem;
+    border-radius: 3.8rem;
+}

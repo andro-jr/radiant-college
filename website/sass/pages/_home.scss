@@ -36,3 +36,15 @@
 
 
 }
+
+#home-courses {
+    .courses-box {
+        width: 100%;
+        display: flex;
+        gap: 3.2rem;
+
+        .course-card {
+            flex: 1;
+        }
+    }
+}

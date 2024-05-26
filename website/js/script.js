@@ -2,7 +2,6 @@
 
 // Reveal sections
 const allSections = document.querySelectorAll(".animate-section");
-console.log("allSections :", allSections);
 
 const revealSection = function (entries, observer) {
     const [entry] = entries;
@@ -122,4 +121,31 @@ if (scale) {
             }, (index + 1) * 500);
         });
     });
+}
+
+// Hamburger menu
+
+const hamburgerIcon = document.querySelector('#hamburgerIcon');
+const mobileNav = document.querySelector('nav');
+const navClose = document.querySelector('#navClose');
+
+const handleOutNavClick = (e) => {
+    if (e.target.classList.contains('nav-items') || e.target.classList.contains('hamburger')) return
+    mobileNav.classList.remove('open')
+    window.removeEventListener('click', handleOutNavClick)
+}
+
+if (hamburgerIcon) {
+    hamburgerIcon.addEventListener('click', () => {
+        mobileNav.classList.add('open')
+        window.addEventListener('click', handleOutNavClick)
+    })
+
+}
+
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        mobileNav.classList.remove('open')
+        window.removeEventListener('click', handleOutNavClick)
+    })
 }

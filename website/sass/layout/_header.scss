@@ -19,7 +19,24 @@ header {
         nav {
 
             @include respond(lg) {
-                display: none;
+                position: fixed;
+                background: white;
+                height: 100vh;
+                width: 60%;
+                z-index: 100;
+                top: 0;
+                right: 0;
+                box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
+
+                visibility: hidden;
+                transform: translateX(100%);
+
+                transition: all 0.5s;
+
+                &.open {
+                    visibility: visible;
+                    transform: translateX(0);
+                }
             }
 
             .nav-items {
@@ -31,7 +48,46 @@ header {
                     font-size: 1.8rem;
                     font-weight: 800;
                     text-decoration: none;
+
+                    @include respond(lg) {
+                        flex-direction: column;
+                        font-size: 2.2rem;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid $color-dark-white;
+                            padding-bottom: 1.6rem;
+                        }
+                    }
                 }
+
+                @include respond(lg) {
+                    flex-direction: column;
+                    gap: 1.6rem;
+                    width: 100%;
+                    padding: 8rem 3.2rem;
+                }
+            }
+
+            #navClose {
+                width: 2rem;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                cursor: pointer;
+                opacity: 0.9;
+            }
+
+        }
+
+        .hamburger {
+            cursor: pointer;
+            width: 3.2rem;
+            display: none;
+
+            @include respond(lg) {
+                display: block;
             }
         }
     }

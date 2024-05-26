@@ -2,6 +2,10 @@
     height: 100vh;
     background: $hero-gradient;
 
+    @include respond(md) {
+        height: auto;
+    }
+
     .hero-container {
         height: 100%;
         padding-top: 15rem;
@@ -59,6 +63,11 @@
                     top: 70%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+
+                    @include respond(md) {
+                        max-width: none;
+                        width: 140%;
+                    }
                 }
 
                 .hero-satellite {

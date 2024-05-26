@@ -17,6 +17,7 @@ header {
         }
 
         nav {
+            position: relative;
 
             @include respond(lg) {
                 position: fixed;
@@ -77,6 +78,13 @@ header {
                 right: 2rem;
                 cursor: pointer;
                 opacity: 0.9;
+
+                display: none;
+
+                @include respond(lg) {
+                    display: block;
+                }
+
             }
 
         }

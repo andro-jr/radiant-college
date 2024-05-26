@@ -110,6 +110,7 @@
     height: 55vh;
     position: relative;
     padding-top: 12rem;
+    background-position: center;
 
     @include respond(xxl) {
         height: 60vh;

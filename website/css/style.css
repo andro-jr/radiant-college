@@ -88,6 +88,12 @@ input[type=number] {
 ::-webkit-scrollbar-thumb:hover {
   background: #BA427F; }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 60px #ffffff inset !important; }
+
 .primary-p {
   color: #0A0A0A;
   font-size: 2.2rem;
@@ -219,6 +225,16 @@ input[type=number] {
     .secondary-button img {
       width: 1.5rem; } }
 
+.form-button {
+  background: #BA427F;
+  color: white;
+  border: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center; }
+  .form-button:hover {
+    color: white; }
+
 .course-card {
   border-radius: 2.8rem;
   overflow: hidden;
@@ -304,6 +320,39 @@ input[type=number] {
     font-weight: 300;
     line-height: 3.8rem;
     color: #737373; }
+
+.form .form-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem; }
+  .form .form-row .form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
+    .form .form-row .form-col label {
+      color: #262626;
+      font-size: 2rem;
+      font-weight: 600; }
+    .form .form-row .form-col input,
+    .form .form-row .form-col textarea {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #CACACA;
+      padding: 1rem 0;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #0A0A0A;
+      transition: all 0.3s; }
+      .form .form-row .form-col input::placeholder,
+      .form .form-row .form-col textarea::placeholder {
+        font-size: 1.6rem;
+        color: #CACACA; }
+      .form .form-row .form-col input:focus,
+      .form .form-row .form-col textarea:focus {
+        border-color: #BA427F; }
+    .form .form-row .form-col textarea {
+      resize: none; }
 
 .carousel-row {
   position: relative; }
@@ -474,7 +523,8 @@ header {
 #secondary-hero {
   height: 55vh;
   position: relative;
-  padding-top: 12rem; }
+  padding-top: 12rem;
+  background-position: center; }
   @media only screen and (max-width: 1400px) {
     #secondary-hero {
       height: 60vh; } }
@@ -637,8 +687,13 @@ footer {
 
 #about {
   padding: 8rem 0; }
+  #about .secondary-p {
+    margin-bottom: 2rem; }
   #about .about-title {
     width: 50%; }
+    @media only screen and (max-width: 768px) {
+      #about .about-title {
+        width: 100%; } }
     #about .about-title .about-quote {
       width: 10rem;
       transform: rotate(180deg); }
@@ -668,3 +723,10 @@ footer {
       letter-spacing: 1.5;
       text-align: center;
       color: #171717; }
+
+#contact {
+  padding: 8rem 0; }
+  #contact .form-box {
+    margin-top: 6rem; }
+    #contact .form-box .form-button {
+      margin-top: 4rem; }

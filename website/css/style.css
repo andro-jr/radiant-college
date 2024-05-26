@@ -407,6 +407,9 @@ header {
       overflow: hidden; }
       #hero .hero-container .hero-row .hero-content-col {
         align-self: center; }
+        @media only screen and (max-width: 768px) {
+          #hero .hero-container .hero-row .hero-content-col {
+            margin-bottom: 2rem; } }
         #hero .hero-container .hero-row .hero-content-col .hero-contents .hero-heading {
           font-size: 10rem;
           font-weight: 300;

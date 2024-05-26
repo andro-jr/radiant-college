@@ -18,6 +18,10 @@
             .hero-content-col {
                 align-self: center;
 
+                @include respond(md) {
+                    margin-bottom: 2rem;
+                }
+
                 .hero-contents {
                     .hero-heading {
                         font-size: 10rem;

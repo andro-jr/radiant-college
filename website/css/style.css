@@ -730,3 +730,19 @@ footer {
     margin-top: 6rem; }
     #contact .form-box .form-button {
       margin-top: 4rem; }
+  #contact .contact-details .detail-row {
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem; }
+    #contact .contact-details .detail-row .detail-box {
+      flex: 1; }
+      #contact .contact-details .detail-row .detail-box .detail-head {
+        color: #515050;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #BA427F;
+        margin-bottom: 1rem; }
+        #contact .contact-details .detail-row .detail-box .detail-head i {
+          margin-right: 5px; }
+  #contact .map iframe {
+    width: 100%; }

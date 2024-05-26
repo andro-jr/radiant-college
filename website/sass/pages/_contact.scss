@@ -8,4 +8,38 @@
             margin-top: 4rem;
         }
     }
+
+    .contact-details {
+
+        .detail-row {
+            display: flex;
+            gap: 3.2rem;
+            margin-bottom: 3.2rem;
+
+            .detail-box {
+                flex: 1;
+
+                .detail-head {
+                    color: $color-dark-gray;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $color-primary;
+                    margin-bottom: 1rem;
+
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .map {
+        iframe {
+            width: 100%;
+        }
+    }
 }

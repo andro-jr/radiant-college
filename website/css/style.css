@@ -117,6 +117,13 @@ input[type=number] {
   color: #0A0A0A;
   transition: all 0.3s; }
 
+.tertiary-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0A0A0A;
+  transition: all 0.3s; }
+
 .bold {
   font-weight: 800; }
 
@@ -468,13 +475,15 @@ header {
   height: 55vh;
   position: relative;
   padding-top: 12rem; }
+  @media only screen and (max-width: 1400px) {
+    #secondary-hero {
+      height: 60vh; } }
   #secondary-hero::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(55, 75, 80, 0.75);
-    z-index: 1;
-    opacity: 0.5; }
+    background: rgba(39, 69, 76, 0.75);
+    z-index: 1; }
   #secondary-hero .seconday-hero-container {
     display: flex;
     flex-direction: column;
@@ -487,13 +496,16 @@ header {
       font-size: 10rem;
       font-weight: 800;
       color: #FAFAFA; }
+      @media only screen and (max-width: 1400px) {
+        #secondary-hero .seconday-hero-container .seconday-hero-heading {
+          font-size: 8rem; } }
     #secondary-hero .seconday-hero-container .hero-navigation {
       font-size: 2rem;
       letter-spacing: 1px;
       color: #FAFAFA;
       font-weight: 500; }
       #secondary-hero .seconday-hero-container .hero-navigation a {
-        color: #BA427F;
+        color: #FAFAFA;
         text-decoration: none; }
 
 footer {
@@ -622,3 +634,37 @@ footer {
 
 #home-events {
   background: #FBFBFB; }
+
+#about {
+  padding: 8rem 0; }
+  #about .about-title {
+    width: 50%; }
+    #about .about-title .about-quote {
+      width: 10rem;
+      transform: rotate(180deg); }
+  #about .about-text {
+    max-width: 100rem; }
+    #about .about-text p {
+      line-height: 1.5; }
+
+#about-vision {
+  background: #FBFBFB; }
+  #about-vision .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; }
+    #about-vision .about-card img {
+      width: 10rem;
+      margin-bottom: 3.2rem; }
+    #about-vision .about-card .title {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 2rem; }
+      #about-vision .about-card .title span {
+        color: #BA427F;
+        font-weight: 800; }
+    #about-vision .about-card .primary-p {
+      letter-spacing: 1.5;
+      text-align: center;
+      color: #171717; }

@@ -7,18 +7,24 @@
     // background: linear-gradient(180deg, #AFAFAF 0%, #222 100%);
     display: flex;
 
-
     &.content-bottom {
         align-items: flex-end;
 
         .course-contents {
-
             margin-left: 20%;
+
+            @include respond(xxl) {
+                margin-left: 15%;
+            }
+
+            @include respond(xl) {
+                margin-left: 0;
+            }
         }
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         inset: 0;
         z-index: 2;
@@ -27,13 +33,13 @@
 
     &.bw-overlay {
         &::after {
-            background: linear-gradient(180deg, #AFAFAF 0%, #222 100%);
+            background: linear-gradient(180deg, #afafaf 0%, #222 100%);
         }
     }
 
     &.primary-overlay {
         &::after {
-            background: linear-gradient(180deg, #FFE1F0 0%, #FF99CD 100%);
+            background: linear-gradient(180deg, #ffe1f0 0%, #ff99cd 100%);
         }
     }
 
@@ -82,7 +88,6 @@
             }
         }
 
-
         span {
             font-size: 2rem;
             font-weight: 500;
@@ -92,6 +97,10 @@
             font-size: 3.4rem;
             font-weight: 800;
             text-transform: uppercase;
+
+            @include respond(xxl) {
+                font-size: 2.8rem;
+            }
         }
     }
 }

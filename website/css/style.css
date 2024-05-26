@@ -128,6 +128,9 @@ input[type=number] {
 
 .section-space {
   padding: 15rem 0; }
+  @media only screen and (max-width: 768px) {
+    .section-space {
+      padding: 8rem 0; } }
 
 .animate-section {
   transition: transform 1s, opacity 1s; }
@@ -201,6 +204,13 @@ input[type=number] {
   width: fit-content;
   padding: 1.4rem 2.2rem;
   border-radius: 3.8rem; }
+  @media only screen and (max-width: 1400px) {
+    .secondary-button {
+      font-size: 1.6rem;
+      padding: 1.4rem 2rem; } }
+  @media only screen and (max-width: 1400px) {
+    .secondary-button img {
+      width: 1.5rem; } }
 
 .course-card {
   border-radius: 2.8rem;
@@ -213,16 +223,22 @@ input[type=number] {
     align-items: flex-end; }
     .course-card.content-bottom .course-contents {
       margin-left: 20%; }
+      @media only screen and (max-width: 1400px) {
+        .course-card.content-bottom .course-contents {
+          margin-left: 15%; } }
+      @media only screen and (max-width: 1200px) {
+        .course-card.content-bottom .course-contents {
+          margin-left: 0; } }
   .course-card::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     z-index: 2;
     mix-blend-mode: hard-light; }
   .course-card.bw-overlay::after {
-    background: linear-gradient(180deg, #AFAFAF 0%, #222 100%); }
+    background: linear-gradient(180deg, #afafaf 0%, #222 100%); }
   .course-card.primary-overlay::after {
-    background: linear-gradient(180deg, #FFE1F0 0%, #FF99CD 100%); }
+    background: linear-gradient(180deg, #ffe1f0 0%, #ff99cd 100%); }
   .course-card .card-bg {
     position: absolute;
     inset: 0;
@@ -255,6 +271,9 @@ input[type=number] {
       font-size: 3.4rem;
       font-weight: 800;
       text-transform: uppercase; }
+      @media only screen and (max-width: 1400px) {
+        .course-card .course-contents .course-title {
+          font-size: 2.8rem; } }
 
 .event-card {
   text-decoration: none; }
@@ -286,6 +305,9 @@ input[type=number] {
     top: 30%;
     transform: translateY(-50%);
     z-index: 2; }
+    @media only screen and (max-width: 768px) {
+      .carousel-row .custom-navigations {
+        display: none; } }
     .carousel-row .custom-navigations .custom-nav {
       filter: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(95%) contrast(91%);
       cursor: pointer; }
@@ -307,9 +329,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 0; }
+    padding-block: 4rem; }
     header .header-container .logo img {
       height: 8rem; }
+    @media only screen and (max-width: 992px) {
+      header .header-container nav {
+        display: none; } }
     header .header-container nav .nav-items {
       display: flex;
       gap: 4rem; }
@@ -388,6 +413,10 @@ footer {
     right: -20%;
     bottom: -60%;
     z-index: -1; }
+    @media only screen and (max-width: 768px) {
+      footer .footer-svg {
+        right: -50%;
+        bottom: -30%; } }
   footer .footer-logo {
     height: 8rem; }
   footer .contact-detail {
@@ -440,6 +469,9 @@ footer {
   width: 100%;
   display: flex;
   gap: 3.2rem; }
+  @media only screen and (max-width: 576px) {
+    #home-courses .courses-box {
+      flex-direction: column; } }
   #home-courses .courses-box .course-card {
     flex: 1; }
 
@@ -447,9 +479,12 @@ footer {
   display: flex;
   gap: 2rem;
   justify-content: space-between; }
+  @media only screen and (max-width: 992px) {
+    #home-message .message-head {
+      align-items: center; } }
   #home-message .message-head .messenger-profile {
     width: 10rem;
-    aspect-ratio: 1;
+    height: 10rem;
     object-fit: cover;
     object-position: top;
     border-radius: 50%; }
@@ -460,10 +495,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 992px) {
+    #home-message .message-col {
+      padding-right: inherit;
+      border-right: none; } }
 
 #home-message .video-container {
   display: flex;
   padding-left: 7.4rem; }
+  @media only screen and (max-width: 992px) {
+    #home-message .video-container {
+      padding-left: 0; } }
   #home-message .video-container .video-box {
     border-radius: 2.8rem;
     overflow: hidden;

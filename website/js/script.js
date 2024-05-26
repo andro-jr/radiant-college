@@ -45,15 +45,9 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                smartSpeed: 700,
             },
             600: {
                 items: 2,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                smartSpeed: 700,
             },
             1200: {
                 items: 3,

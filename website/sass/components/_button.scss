@@ -39,4 +39,15 @@
     width: fit-content;
     padding: 1.4rem 2.2rem;
     border-radius: 3.8rem;
+
+    @include respond(xxl) {
+        font-size: 1.6rem;
+        padding: 1.4rem 2rem;
+    }
+
+    img {
+        @include respond(xxl) {
+            width: 1.5rem;
+        }
+    }
 }

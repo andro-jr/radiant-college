@@ -8,7 +8,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 4rem 0;
+        padding-block: 4rem;
 
         .logo {
             img {
@@ -17,6 +17,11 @@ header {
         }
 
         nav {
+
+            @include respond(lg) {
+                display: none;
+            }
+
             .nav-items {
                 display: flex;
                 gap: 4rem;

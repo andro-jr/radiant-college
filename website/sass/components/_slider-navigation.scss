@@ -7,6 +7,10 @@
         transform: translateY(-50%);
         z-index: 2;
 
+        @include respond(md) {
+            display: none;
+        }
+
         .custom-nav {
             filter: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(95%) contrast(91%);
             cursor: pointer;

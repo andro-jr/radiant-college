@@ -43,6 +43,10 @@
         display: flex;
         gap: 3.2rem;
 
+        @include respond(sm) {
+            flex-direction: column;
+        }
+
         .course-card {
             flex: 1;
         }
@@ -55,9 +59,13 @@
         gap: 2rem;
         justify-content: space-between;
 
+        @include respond(lg) {
+            align-items: center;
+        }
+
         .messenger-profile {
             width: 10rem;
-            aspect-ratio: 1;
+            height: 10rem;
             object-fit: cover;
             object-position: top;
             border-radius: 50%;
@@ -68,6 +76,11 @@
         padding-right: 7.4rem;
         border-right: 1px solid $color-light-gray;
 
+        @include respond(lg) {
+            padding-right: inherit;
+            border-right: none;
+        }
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,6 +89,10 @@
     .video-container {
         display: flex;
         padding-left: 7.4rem;
+
+        @include respond(lg) {
+            padding-left: 0;
+        }
 
         .video-box {
             border-radius: 2.8rem;

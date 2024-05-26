@@ -1,13 +1,21 @@
 #contact {
     padding: 8rem 0;
 
-    .form-box {
-        margin-top: 6rem;
+    .form-col {
+        @include respond(md) {
+            margin-bottom: 4rem;
+        }
 
-        .form-button {
-            margin-top: 4rem;
+        .form-box {
+            margin-top: 6rem;
+
+            .form-button {
+                margin-top: 4rem;
+            }
         }
     }
+
+
 
     .contact-details {
 

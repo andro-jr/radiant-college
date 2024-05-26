@@ -5,11 +5,15 @@ header {
     width: 100%;
     z-index: 100;
 
+    &.white-header {
+        background: white;
+    }
+
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-block: 2rem;
+        padding-block: 1.6rem;
 
         .logo {
             img {

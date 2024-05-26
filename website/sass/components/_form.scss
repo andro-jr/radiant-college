@@ -4,6 +4,10 @@
         gap: 2rem;
         margin-bottom: 2rem;
 
+        @include respond(md) {
+            flex-direction: column;
+        }
+
         .form-col {
             flex: 1;
 

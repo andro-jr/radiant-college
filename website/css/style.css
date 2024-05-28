@@ -384,6 +384,27 @@ input:-webkit-autofill:active {
       left: -4rem;
       transform: rotate(180deg); }
 
+.team-card {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  overflow: hidden; }
+  .team-card .team-profile {
+    aspect-ratio: 1;
+    object-position: top;
+    object-fit: cover; }
+  .team-card .team-info {
+    padding: 1.6rem 1.8rem; }
+    .team-card .team-info .team-name {
+      font-size: 2rem;
+      color: #171717;
+      letter-spacing: 1px;
+      font-weight: 600; }
+    .team-card .team-info .team-position {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #CACACA;
+      letter-spacing: 1px; }
+
 header {
   position: absolute;
   top: 0;

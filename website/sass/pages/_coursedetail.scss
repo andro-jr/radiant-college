@@ -36,6 +36,10 @@
                 transform: translateY(-50%);
                 right: 35%;
                 z-index: -1;
+
+                @include respond(md) {
+                    display: none;
+                }
             }
 
 

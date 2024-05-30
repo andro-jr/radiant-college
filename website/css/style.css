@@ -459,7 +459,7 @@ header {
         header .header-container nav .nav-items .nav-item {
           color: #0A0A0A;
           font-size: 1.8rem;
-          font-weight: 800;
+          font-weight: 600;
           text-decoration: none; }
           @media only screen and (max-width: 992px) {
             header .header-container nav .nav-items .nav-item {
@@ -936,6 +936,9 @@ footer {
       transform: translateY(-50%);
       right: 35%;
       z-index: -1; }
+      @media only screen and (max-width: 768px) {
+        #course-details .image-col .img-box .svg-img {
+          display: none; } }
     #course-details .image-col .img-box .course-img {
       border-radius: 2rem; }
 

@@ -1,0 +1,137 @@
+// 1px solid #d1d7dc
+
+.accord-box {
+    .accord-item {
+        border: 1px solid #d1d7dc;
+
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+
+        &.open {
+            .accord-head {
+                border-bottom: 1px solid #d1d7dc;
+
+                .head-title {
+                    img {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+
+            .accord-contents {
+                visibility: visible;
+                max-height: 100rem;
+            }
+        }
+
+        .accord-head {
+            background: #f7f9fa;
+            background: $hero-gradient;
+            padding: 1.6rem 2.4rem;
+            cursor: pointer;
+
+
+
+            transition: all 0.3s;
+            border-bottom: 0px solid #d1d7dc;
+
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .head-title {
+                font-size: 1.8rem;
+                color: #2d2f31;
+                font-weight: 700;
+                letter-spacing: 0.8px;
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+
+                img {
+                    width: 1.2rem;
+                    transform: rotate(180deg);
+                    transition: all 0.3s;
+                }
+            }
+
+            .head-meta {
+                font-weight: 400;
+                line-height: 1.4;
+                font-size: 1.4rem;
+                color: $color-dark-gray ;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: calc(100% + 1rem);
+                    width: 3px;
+                    height: 3px;
+                    background: $color-dark-gray;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .accord-contents {
+
+
+            visibility: hidden;
+            max-height: 0;
+            padding: 0;
+            transition: all 0.3s;
+            overflow: hidden;
+
+
+            padding-inline: 2.4rem;
+
+
+
+
+
+            .course-items {
+
+                &:first-child {
+                    padding-top: 1.6rem;
+                }
+
+                &:last-child {
+                    padding-bottom: 1.6rem;
+                }
+
+                .course-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #515050;
+                    padding: .8rem 0;
+
+                    .course-title {
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        font-size: 1.6rem;
+
+                        img {
+                            width: 1.6rem;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .course-credit {
+                        font-weight: 400;
+                        line-height: 1.4;
+                        font-size: 1.4rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

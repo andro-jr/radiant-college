@@ -149,3 +149,14 @@ if (navClose) {
         window.removeEventListener('click', handleOutNavClick)
     })
 }
+
+// accordion
+const accordHead = document.querySelectorAll('.accord-head');
+
+if (accordHead) {
+    accordHead.forEach(item => {
+        item.addEventListener('click', () => {
+            item.closest('.accord-item').classList.toggle('open')
+        })
+    })
+}

@@ -4,6 +4,10 @@
 
         p {
             margin-bottom: 2rem;
+            color: $color-dark-gray;
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 1.7;
         }
 
         .primary-title {
@@ -41,5 +45,16 @@
             }
         }
 
+    }
+}
+
+
+#curriculum {
+    // background: $color-medium-white;
+
+    .accord-box {
+        // max-width: 100rem;
+        // margin: auto;
+        margin-top: 4rem;
     }
 }

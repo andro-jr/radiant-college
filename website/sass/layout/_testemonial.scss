@@ -1,9 +1,16 @@
 .testemonial-box {
+    .quote {
+        width: 8rem !important;
+        transform: rotate(180deg);
+    }
+
     .testemonial-text {
         color: $color-gray;
         font-size: 1.8rem;
         line-height: 1.5;
         letter-spacing: 0.5px;
+
+
     }
 
     .testemonial-profile {

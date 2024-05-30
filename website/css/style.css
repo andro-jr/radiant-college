@@ -591,10 +591,14 @@ header {
     #secondary-hero .seconday-hero-container .seconday-hero-heading {
       font-size: 10rem;
       font-weight: 800;
-      color: #FAFAFA; }
+      color: #FAFAFA;
+      text-align: center; }
       @media only screen and (max-width: 1400px) {
         #secondary-hero .seconday-hero-container .seconday-hero-heading {
           font-size: 8rem; } }
+      @media only screen and (max-width: 768px) {
+        #secondary-hero .seconday-hero-container .seconday-hero-heading {
+          font-size: 6rem; } }
     #secondary-hero .seconday-hero-container .hero-navigation {
       font-size: 2rem;
       letter-spacing: 1px;
@@ -706,6 +710,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 2rem;
       color: #515050;
       padding: .8rem 0; }
       .accord-box .accord-item .accord-contents .course-items .course-item .course-title {
@@ -719,7 +724,12 @@ footer {
       .accord-box .accord-item .accord-contents .course-items .course-item .course-credit {
         font-weight: 400;
         line-height: 1.4;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        min-width: 5rem; }
+
+.testemonial-box .quote {
+  width: 8rem !important;
+  transform: rotate(180deg); }
 
 .testemonial-box .testemonial-text {
   color: #737373;
@@ -933,8 +943,7 @@ footer {
   margin-top: 4rem; }
 
 #testemonials .testemonial-container {
-  padding: 4rem 0;
-  height: 100%; }
+  padding: 4rem 0; }
   #testemonials .testemonial-container .bold-title {
     color: #171717; }
 
@@ -942,7 +951,6 @@ footer {
   background: linear-gradient(220deg, #f9a81d 1.74%, #BA427F 89.66%);
   border-radius: 4rem;
   padding: 4rem;
-  height: 100%;
   color: #FAFAFA;
   display: flex;
   flex-direction: column; }

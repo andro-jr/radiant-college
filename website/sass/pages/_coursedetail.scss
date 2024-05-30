@@ -57,9 +57,7 @@
 
 #testemonials {
     .testemonial-container {
-        // border-radius: 4rem;
         padding: 4rem 0;
-        height: 100%;
 
 
         .bold-title {
@@ -71,7 +69,6 @@
         background: $primary-gradient;
         border-radius: 4rem;
         padding: 4rem;
-        height: 100%;
         color: $color-white;
         display: flex;
         flex-direction: column;

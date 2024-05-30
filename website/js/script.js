@@ -77,6 +77,14 @@ $(document).ready(function () {
         },
     });
 
+    // testemonial carousel
+    $(".testemonial-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 40,
+        dots: true,
+    });
+
     // Custom navigation action
     $(".nav-prev").click(function () {
         var parentCarousel = $(this).closest(".carousel-row");

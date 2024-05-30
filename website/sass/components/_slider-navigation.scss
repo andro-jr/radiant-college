@@ -33,3 +33,7 @@
         }
     }
 }
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: $color-secondary;
+}

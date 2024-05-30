@@ -74,19 +74,7 @@
         color: white;
         line-height: 3.8rem;
 
-        .button {
-            color: white;
 
-            img {
-                transition: all 0.3s;
-            }
-
-            &:hover {
-                img {
-                    transform: translateX(5px);
-                }
-            }
-        }
 
         span {
             font-size: 2rem;

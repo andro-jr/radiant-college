@@ -134,6 +134,12 @@ input:-webkit-autofill:active {
   color: #0A0A0A;
   transition: all 0.3s; }
 
+.bold-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 800; }
+
 .bold {
   font-weight: 800; }
 
@@ -226,7 +232,8 @@ input:-webkit-autofill:active {
   color: white;
   width: fit-content;
   padding: 1.4rem 2.2rem;
-  border-radius: 3.8rem; }
+  border-radius: 3.8rem;
+  color: white; }
   @media only screen and (max-width: 1400px) {
     .secondary-button {
       font-size: 1.6rem;
@@ -234,6 +241,12 @@ input:-webkit-autofill:active {
   @media only screen and (max-width: 1400px) {
     .secondary-button img {
       width: 1.5rem; } }
+  .secondary-button img {
+    transition: all 0.3s; }
+  .secondary-button:hover {
+    color: white; }
+    .secondary-button:hover img {
+      transform: translateX(5px); }
 
 .form-button {
   background: #BA427F;
@@ -291,12 +304,6 @@ input:-webkit-autofill:active {
     margin: 6rem 0;
     color: white;
     line-height: 3.8rem; }
-    .course-card .course-contents .button {
-      color: white; }
-      .course-card .course-contents .button img {
-        transition: all 0.3s; }
-      .course-card .course-contents .button:hover img {
-        transform: translateX(5px); }
     .course-card .course-contents span {
       font-size: 2rem;
       font-weight: 500; }
@@ -389,6 +396,9 @@ input:-webkit-autofill:active {
       position: absolute;
       left: -4rem;
       transform: rotate(180deg); }
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #f9a81d; }
 
 .team-card {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
@@ -711,6 +721,30 @@ footer {
         line-height: 1.4;
         font-size: 1.4rem; }
 
+.testemonial-box .testemonial-text {
+  color: #FAFAFA;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px; }
+
+.testemonial-box .testemonial-profile {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center; }
+  .testemonial-box .testemonial-profile img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%; }
+  .testemonial-box .testemonial-profile .profile-details {
+    color: white; }
+    .testemonial-box .testemonial-profile .profile-details .profile-name {
+      font-size: 2rem; }
+    .testemonial-box .testemonial-profile .profile-details .batch {
+      font-size: 1.4rem; }
+
 #home-about .services-container {
   display: flex;
   gap: 4.4rem;
@@ -886,14 +920,33 @@ footer {
     padding-top: 2rem; }
     #course-details .image-col .img-box .svg-img {
       position: absolute;
-      width: 80%;
+      width: 85%;
       top: 50%;
       transform: translateY(-50%);
       right: 35%;
-      z-index: -1;
-      opacity: 0.5; }
+      z-index: -1; }
     #course-details .image-col .img-box .course-img {
       border-radius: 2rem; }
 
 #curriculum .accord-box {
   margin-top: 4rem; }
+
+#testemonials .testemonial-container {
+  background: #BA427F;
+  border-radius: 4rem;
+  padding: 4rem;
+  height: 100%; }
+  #testemonials .testemonial-container .bold-title {
+    color: white; }
+
+#testemonials .apply-box {
+  background: #f9a81d;
+  border-radius: 4rem;
+  padding: 4rem;
+  height: 100%;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column; }
+  #testemonials .apply-box p {
+    color: #FBFBFB;
+    margin-bottom: 6rem; }

@@ -31,12 +31,11 @@
                 position: absolute;
 
 
-                width: 80%;
+                width: 85%;
                 top: 50%;
                 transform: translateY(-50%);
                 right: 35%;
                 z-index: -1;
-                opacity: 0.5;
             }
 
 
@@ -50,11 +49,40 @@
 
 
 #curriculum {
-    // background: $color-medium-white;
 
     .accord-box {
-        // max-width: 100rem;
-        // margin: auto;
         margin-top: 4rem;
+    }
+}
+
+#testemonials {
+    .testemonial-container {
+        background: $color-primary;
+        border-radius: 4rem;
+        padding: 4rem;
+        height: 100%;
+
+
+        .bold-title {
+            color: white;
+
+        }
+    }
+
+    .apply-box {
+        background: $color-secondary;
+        border-radius: 4rem;
+        padding: 4rem;
+        height: 100%;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            color: $color-medium-white;
+            margin-bottom: 6rem;
+        }
+
+
     }
 }

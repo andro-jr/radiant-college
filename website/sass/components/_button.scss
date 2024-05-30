@@ -50,6 +50,22 @@
             width: 1.5rem;
         }
     }
+
+
+    color: white;
+
+    img {
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        color: white;
+
+        img {
+            transform: translateX(5px);
+        }
+
+    }
 }
 
 .form-button {

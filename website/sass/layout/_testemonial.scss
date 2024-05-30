@@ -1,0 +1,36 @@
+.testemonial-box {
+    .testemonial-text {
+        color: $color-white;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+
+    .testemonial-profile {
+        margin-top: 3.2rem;
+
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+        }
+
+        .profile-details {
+            color: white;
+
+            .profile-name {
+                font-size: 2rem;
+            }
+
+            .batch {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .testemonial-box {
     .testemonial-text {
-        color: $color-white;
+        color: $color-gray;
         font-size: 1.8rem;
         line-height: 1.5;
         letter-spacing: 0.5px;
@@ -22,7 +22,7 @@
         }
 
         .profile-details {
-            color: white;
+            color: $color-medium-black;
 
             .profile-name {
                 font-size: 2rem;
@@ -30,6 +30,7 @@
 
             .batch {
                 font-size: 1.4rem;
+                color: $color-gray;
             }
         }
     }

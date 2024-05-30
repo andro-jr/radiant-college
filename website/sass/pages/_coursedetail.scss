@@ -57,20 +57,18 @@
 
 #testemonials {
     .testemonial-container {
-        background: $color-primary;
-        border-radius: 4rem;
-        padding: 4rem;
+        // border-radius: 4rem;
+        padding: 4rem 0;
         height: 100%;
 
 
         .bold-title {
-            color: white;
-
+            color: $color-medium-black;
         }
     }
 
     .apply-box {
-        background: $color-secondary;
+        background: $primary-gradient;
         border-radius: 4rem;
         padding: 4rem;
         height: 100%;

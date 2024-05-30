@@ -83,6 +83,7 @@ $(document).ready(function () {
         items: 1,
         margin: 40,
         dots: true,
+        autoplay: true
     });
 
     // Custom navigation action

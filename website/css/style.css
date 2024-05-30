@@ -722,7 +722,7 @@ footer {
         font-size: 1.4rem; }
 
 .testemonial-box .testemonial-text {
-  color: #FAFAFA;
+  color: #737373;
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: 0.5px; }
@@ -739,11 +739,12 @@ footer {
     object-position: top;
     border-radius: 50%; }
   .testemonial-box .testemonial-profile .profile-details {
-    color: white; }
+    color: #171717; }
     .testemonial-box .testemonial-profile .profile-details .profile-name {
       font-size: 2rem; }
     .testemonial-box .testemonial-profile .profile-details .batch {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      color: #737373; }
 
 #home-about .services-container {
   display: flex;
@@ -932,15 +933,13 @@ footer {
   margin-top: 4rem; }
 
 #testemonials .testemonial-container {
-  background: #BA427F;
-  border-radius: 4rem;
-  padding: 4rem;
+  padding: 4rem 0;
   height: 100%; }
   #testemonials .testemonial-container .bold-title {
-    color: white; }
+    color: #171717; }
 
 #testemonials .apply-box {
-  background: #f9a81d;
+  background: linear-gradient(220deg, #f9a81d 1.74%, #BA427F 89.66%);
   border-radius: 4rem;
   padding: 4rem;
   height: 100%;

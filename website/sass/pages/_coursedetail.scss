@@ -69,19 +69,5 @@
         }
     }
 
-    .apply-box {
-        background: $primary-gradient;
-        border-radius: 4rem;
-        padding: 4rem;
-        color: $color-white;
-        display: flex;
-        flex-direction: column;
 
-        p {
-            color: $color-medium-white;
-            margin-bottom: 6rem;
-        }
-
-
-    }
 }

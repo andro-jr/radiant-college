@@ -400,6 +400,17 @@ input:-webkit-autofill:active {
 .owl-theme .owl-dots .owl-dot.active span {
   background: #f9a81d; }
 
+.apply-box {
+  background: linear-gradient(220deg, #f9a81d 1.74%, #BA427F 89.66%);
+  border-radius: 4rem;
+  padding: 4rem;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column; }
+  .apply-box p {
+    color: #FBFBFB;
+    margin-bottom: 6rem; }
+
 .team-card {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
@@ -793,6 +804,8 @@ footer {
       flex-direction: column; } }
   #home-courses .courses-box .course-card {
     flex: 1; }
+  #home-courses .courses-box .apply-box {
+    flex: 1; }
 
 #home-message .message-head {
   display: flex;
@@ -949,14 +962,3 @@ footer {
   padding: 4rem 0; }
   #testemonials .testemonial-container .bold-title {
     color: #171717; }
-
-#testemonials .apply-box {
-  background: linear-gradient(220deg, #f9a81d 1.74%, #BA427F 89.66%);
-  border-radius: 4rem;
-  padding: 4rem;
-  color: #FAFAFA;
-  display: flex;
-  flex-direction: column; }
-  #testemonials .apply-box p {
-    color: #FBFBFB;
-    margin-bottom: 6rem; }

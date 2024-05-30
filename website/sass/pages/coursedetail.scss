@@ -1,0 +1,45 @@
+#course-details {
+    .course-block {
+        margin-bottom: 4rem;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .primary-title {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .image-col {
+        position: relative;
+        z-index: -1;
+
+        .img-box {
+            position: relative;
+            position: sticky;
+            top: 4rem;
+            padding-top: 2rem;
+
+            .svg-img {
+
+                // transform: rotate(270deg);
+                position: absolute;
+
+
+                width: 80%;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 35%;
+                z-index: -1;
+                opacity: 0.5;
+            }
+
+
+            .course-img {
+                border-radius: 2rem;
+            }
+        }
+
+    }
+}

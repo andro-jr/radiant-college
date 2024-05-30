@@ -670,7 +670,6 @@ footer {
     max-height: 100rem; }
   .accord-box .accord-item .accord-head {
     background: #f7f9fa;
-    background: linear-gradient(261deg, #FFF8E5 1.74%, #FFF7FB 89.66%);
     padding: 1.6rem 2.4rem;
     cursor: pointer;
     transition: all 0.3s;

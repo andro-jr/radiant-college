@@ -81,3 +81,28 @@
         color: white;
     }
 }
+
+.read-more {
+    font-size: 1.4rem;
+    color: $color-primary;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+
+    img {
+        width: 1.2rem;
+        margin-top: 3px;
+        filter: brightness(0) saturate(100%) invert(34%) sepia(15%) saturate(4790%) hue-rotate(290deg) brightness(93%) contrast(82%);
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        img {
+            transform: translateX(5px);
+        }
+    }
+}

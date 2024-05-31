@@ -258,6 +258,24 @@ input:-webkit-autofill:active {
   .form-button:hover {
     color: white; }
 
+.read-more {
+  font-size: 1.4rem;
+  color: #BA427F;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500; }
+  .read-more img {
+    width: 1.2rem;
+    margin-top: 3px;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(15%) saturate(4790%) hue-rotate(290deg) brightness(93%) contrast(82%);
+    transition: all 0.3s; }
+  .read-more:hover {
+    color: #BA427F; }
+    .read-more:hover img {
+      transform: translateX(5px); }
+
 .course-card {
   border-radius: 2.8rem;
   overflow: hidden;
@@ -961,3 +979,60 @@ footer {
   padding: 4rem 0; }
   #testemonials .testemonial-container .bold-title {
     color: #171717; }
+
+.notice-card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  background: #FBFBFB;
+  height: 100%; }
+  .notice-card .notice-img {
+    border-radius: 1.6rem;
+    width: 25%;
+    aspect-ratio: 1;
+    object-fit: cover; }
+    @media only screen and (max-width: 1400px) {
+      .notice-card .notice-img {
+        width: 30%; } }
+    @media only screen and (max-width: 1200px) {
+      .notice-card .notice-img {
+        width: 40%; } }
+  .notice-card .notice-details {
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column; }
+    .notice-card .notice-details .read-more {
+      width: fit-content;
+      margin-top: auto; }
+    .notice-card .notice-details .title {
+      font-size: 2.4rem;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #171717;
+      transition: all 0.3s;
+      font-weight: 500;
+      line-height: 1.2; }
+      .notice-card .notice-details .title:hover {
+        color: #BA427F; }
+    .notice-card .notice-details p {
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 1.6rem;
+      color: #737373;
+      margin-bottom: 1.6rem; }
+    .notice-card .notice-details .date {
+      font-size: 1.4rem;
+      color: #BA427F;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      display: inline-block; }
+      .notice-card .notice-details .date i {
+        margin-right: 5px; }

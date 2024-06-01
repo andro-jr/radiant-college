@@ -1149,3 +1149,15 @@ footer {
         margin-top: auto; }
         #detail-section .list-box .list-items .list-item .list-contents .read-more img {
           margin-block: 0; }
+
+.program-card {
+  text-decoration: none; }
+  .program-card .program-image {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1.6rem;
+    margin-bottom: 2rem; }
+  .program-card p {
+    font-size: 1.6rem;
+    color: #737373;
+    margin-bottom: 5px; }

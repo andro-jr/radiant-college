@@ -1,0 +1,16 @@
+.program-card {
+    text-decoration: none;
+
+    .program-image {
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: $color-gray;
+        margin-bottom: 5px;
+    }
+}

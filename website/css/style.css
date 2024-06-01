@@ -981,7 +981,7 @@ footer {
   #testemonials .testemonial-container .bold-title {
     color: #171717; }
 
-.notice-card {
+.content-card {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
   padding: 2rem;
@@ -989,25 +989,22 @@ footer {
   gap: 2rem;
   background: #FBFBFB;
   height: 100%; }
-  .notice-card .notice-img {
+  .content-card .content-img {
     border-radius: 1.6rem;
-    width: 25%;
+    width: 30%;
     aspect-ratio: 1;
     object-fit: cover; }
-    @media only screen and (max-width: 1400px) {
-      .notice-card .notice-img {
-        width: 30%; } }
     @media only screen and (max-width: 1200px) {
-      .notice-card .notice-img {
+      .content-card .content-img {
         width: 40%; } }
-  .notice-card .notice-details {
+  .content-card .content-details {
     padding: 6px 0;
     display: flex;
     flex-direction: column; }
-    .notice-card .notice-details .read-more {
+    .content-card .content-details .read-more {
       width: fit-content;
       margin-top: auto; }
-    .notice-card .notice-details .title {
+    .content-card .content-details .title {
       font-size: 2.4rem;
       -webkit-line-clamp: 2;
       display: -webkit-box;
@@ -1019,9 +1016,9 @@ footer {
       transition: all 0.3s;
       font-weight: 500;
       line-height: 1.2; }
-      .notice-card .notice-details .title:hover {
+      .content-card .content-details .title:hover {
         color: #BA427F; }
-    .notice-card .notice-details p {
+    .content-card .content-details p {
       -webkit-line-clamp: 3;
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -1029,13 +1026,13 @@ footer {
       font-size: 1.6rem;
       color: #737373;
       margin-bottom: 1.6rem; }
-    .notice-card .notice-details .date {
+    .content-card .content-details .date {
       font-size: 1.4rem;
       color: #BA427F;
       font-weight: 500;
       margin-bottom: 1rem;
       display: inline-block; }
-      .notice-card .notice-details .date i {
+      .content-card .content-details .date i {
         margin-right: 5px; }
 
 #detail-section .list-col {

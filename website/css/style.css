@@ -333,28 +333,34 @@ input:-webkit-autofill:active {
         .course-card .course-contents .course-title {
           font-size: 2.8rem; } }
 
-.event-card {
+.primary-card {
   text-decoration: none; }
-  .event-card img {
+  .primary-card img {
     border-radius: 1.8rem;
     aspect-ratio: 16/10;
     object-fit: cover;
     margin-bottom: 2.4rem; }
-  .event-card .tag {
+  .primary-card .tag {
     color: #f9a81d;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 3.8rem;
     margin-bottom: 0.8rem; }
-  .event-card.event-variant .tag {
+  .primary-card.event-variant .tag {
     color: #BA427F; }
-  .event-card:hover .primary-title {
+  .primary-card:hover .primary-title {
     color: #BA427F; }
-  .event-card .date {
+  .primary-card .date {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 3.8rem;
     color: #737373; }
+
+#gallery .primary-card-box {
+  margin-bottom: 2rem; }
+
+#gallery .primary-card img {
+  margin-bottom: 1rem; }
 
 .form .form-row {
   display: flex;
@@ -823,7 +829,8 @@ footer {
   #home-courses .courses-box .course-card {
     flex: 1; }
   #home-courses .courses-box .apply-box {
-    flex: 1; }
+    flex: 1;
+    border-radius: 2.8rem; }
 
 #home-message .message-head {
   display: flex;

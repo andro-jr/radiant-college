@@ -92,3 +92,59 @@
         }
     }
 }
+
+.primary-card {
+    text-decoration: none;
+
+
+
+    img {
+        border-radius: 1.8rem;
+        aspect-ratio: 16/10;
+        object-fit: cover;
+        margin-bottom: 2.4rem;
+    }
+
+    .tag {
+        color: $color-secondary;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 3.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &.event-variant {
+        .tag {
+            color: $color-primary;
+        }
+    }
+
+    &:hover {
+        .primary-title {
+            color: $color-primary;
+        }
+    }
+
+
+
+    .date {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 3.8rem;
+        color: $color-gray;
+    }
+}
+
+#gallery {
+    .primary-card-box {
+        margin-bottom: 2rem;
+    }
+
+    .primary-card {
+        img {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+}

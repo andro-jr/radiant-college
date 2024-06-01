@@ -1038,6 +1038,12 @@ footer {
       .notice-card .notice-details .date i {
         margin-right: 5px; }
 
+#detail-section .list-col {
+  max-width: 45rem; }
+  @media only screen and (max-width: 1400px) {
+    #detail-section .list-col {
+      max-width: none; } }
+
 #detail-section .title {
   line-height: 1.1;
   font-weight: 600;

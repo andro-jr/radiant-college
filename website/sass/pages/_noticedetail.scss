@@ -1,4 +1,13 @@
 #detail-section {
+
+    .list-col {
+        max-width: 45rem;
+
+        @include respond(xxl) {
+            max-width: none;
+        }
+    }
+
     .title {
         line-height: 1.1;
         font-weight: 600;

@@ -29,6 +29,15 @@
             background: white;
             padding: 4rem;
 
+            @include respond(lg) {
+                width: 100%;
+                margin-inline: 4rem;
+            }
+
+            @include respond(sm) {
+                margin-inline: 2rem;
+            }
+
             img {
                 margin-bottom: 2rem;
             }

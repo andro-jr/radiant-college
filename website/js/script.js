@@ -191,3 +191,22 @@ if (accordHead) {
     });
   });
 }
+
+// Modal container
+const modalContainer = document.querySelector(".modal-container");
+const modalCross = document.querySelector(".modal-cross");
+const partnerBoxes = document.querySelectorAll(".partner-box");
+
+if (partnerBoxes && modalContainer) {
+  partnerBoxes.forEach((item) => {
+    item.addEventListener("click", () => {
+      modalContainer.classList.remove("hide");
+    });
+  });
+}
+
+if (modalCross) {
+  modalCross.addEventListener("click", () => {
+    modalContainer.classList.add("hide");
+  });
+}

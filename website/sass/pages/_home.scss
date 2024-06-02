@@ -133,3 +133,139 @@
 #home-events {
     background: $color-medium-white;
 }
+
+.partners-row {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    @include respond(md) {
+        box-shadow: none;
+    }
+
+    .partner-box {
+        flex-basis: 20%;
+
+        @include respond(lg) {
+            flex-basis: 33.33%;
+        }
+
+        @include respond(md) {
+            flex-basis: 50%;
+
+            &:nth-child(even) {
+                background: none !important;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:nth-child(even) {
+            background: #e5e5e578;
+        }
+
+        .partner-logo {
+            max-width: 15rem;
+            margin-bottom: 2rem;
+            margin-top: auto;
+
+            transition: all 0.3s;
+        }
+
+        position: relative;
+        overflow: hidden;
+
+        .read-more {
+            position: absolute;
+            bottom: -2rem;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            .read-more {
+                bottom: 1rem;
+            }
+
+            &::after {
+
+                transform: translate(0, 0) scale(1.5);
+                border-radius: 40%;
+                opacity: 1;
+            }
+
+            .view-more {
+
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+
+        }
+
+        @include respond(md) {
+            &:hover {
+                .view-more {
+
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: $primary-gradient;
+            transform: translate(150%, 150%) scale(1.5);
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            opacity: 0;
+
+            @include respond(md) {
+                display: none;
+            }
+        }
+
+        .view-more {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            color: white;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            z-index: 2;
+            opacity: 0;
+            transition: all 0.5s;
+            font-weight: 500;
+
+            i {
+                margin-left: 5px;
+            }
+
+            @include respond(md) {
+                position: static;
+                color: $color-primary;
+                transform: none;
+                opacity: 1;
+            }
+        }
+
+        h4 {
+            margin-top: auto;
+            text-align: center;
+            font-size: 1.6rem;
+
+
+        }
+
+
+    }
+}

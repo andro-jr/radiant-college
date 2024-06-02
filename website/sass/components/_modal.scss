@@ -1,0 +1,42 @@
+.modal-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+    background-color: rgba(46, 46, 46, 0.288);
+
+
+
+    .modal-box {
+        position: relative;
+
+        .modal-cross {
+            position: absolute;
+            width: 2rem;
+            top: -4rem;
+            right: 0;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+            cursor: pointer;
+        }
+
+        .modal-contents {
+            overflow-y: scroll;
+            height: 60vh;
+            width: 80rem;
+            background: white;
+            padding: 4rem;
+
+            img {
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+}

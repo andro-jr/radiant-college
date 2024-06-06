@@ -50,6 +50,10 @@ header {
                 display: flex;
                 gap: 4rem;
 
+                @include respond(lg) {
+                    gap: 2rem;
+                }
+
                 .nav-item {
                     color: $color-black;
                     font-size: 1.8rem;
